@@ -1,6 +1,21 @@
 #!/bin/bash
 # Fitness Platform API Test Script
 
+# Check for required dependencies
+if ! command -v curl &> /dev/null; then
+    echo "Error: curl is required but not installed."
+    exit 1
+fi
+
+if ! command -v jq &> /dev/null; then
+    echo "Warning: jq is not installed. Output formatting will be limited."
+    echo "Install jq for better output: sudo apt-get install jq"
+    echo ""
+    USE_JQ=false
+else
+    USE_JQ=true
+fi
+
 echo "🏋️  Testing Fitness Platform API"
 echo "=================================="
 echo ""
@@ -81,13 +96,18 @@ echo -e "${GREEN}All tests completed!${NC}"
 echo ""
 
 # Display library summary
-echo "📊 Library Summary:"
-curl -s "$BASE_URL/api/library" | jq '.summary'
+if [ "$USE_JQ" = true ]; then
+    echo "📊 Library Summary:"
+    curl -s "$BASE_URL/api/library" | jq '.summary'
 
-echo ""
-echo "💡 View supersets:"
-curl -s "$BASE_URL/api/library" | jq '.data.supersets | map({id, name})'
+    echo ""
+    echo "💡 View supersets:"
+    curl -s "$BASE_URL/api/library" | jq '.data.supersets | map({id, name})'
 
-echo ""
-echo "📈 View rep max progressions:"
-curl -s "$BASE_URL/api/library" | jq '.data.repMaxProgressions | map({id, name})'
+    echo ""
+    echo "📈 View rep max progressions:"
+    curl -s "$BASE_URL/api/library" | jq '.data.repMaxProgressions | map({id, name})'
+else
+    echo "📊 Library Summary (install jq for formatted output):"
+    curl -s "$BASE_URL/api/library"
+fi

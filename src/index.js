@@ -195,7 +195,12 @@ app.post('/api/clients/:clientId/progress', (req, res) => {
 
 app.get('/api/clients/:clientId/progress', (req, res) => {
   const { clientId } = req.params;
-  const limit = parseInt(req.query.limit) || 10;
+  let limit = parseInt(req.query.limit) || 10;
+  
+  // Validate limit is within reasonable bounds (1-100)
+  if (limit < 1) limit = 1;
+  if (limit > 100) limit = 100;
+  
   const progress = platform.getClientProgress(clientId, limit);
   res.json({
     success: true,

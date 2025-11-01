@@ -70,7 +70,7 @@ export class GroupWorkoutManager {
 
   // Workout Plan Management
   createWorkoutPlan(name, description, exercises, trainerId, duration = 60) {
-    const id = `wp_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const id = `wp_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     const plan = new WorkoutPlan(id, name, description, exercises, trainerId, duration);
     this.workoutPlans.set(id, plan);
     return plan;
@@ -103,7 +103,7 @@ export class GroupWorkoutManager {
 
   // Group Management
   createGroup(name, trainerId, clientIds = [], description = '') {
-    const id = `grp_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const id = `grp_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     const group = new Group(id, name, trainerId, clientIds, description);
     this.groups.set(id, group);
     return group;
@@ -141,7 +141,7 @@ export class GroupWorkoutManager {
 
   // Assignment Management
   assignWorkoutToGroup(groupId, workoutPlanId, schedule, trainerId) {
-    const id = `asg_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const id = `asg_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     const assignment = new GroupWorkoutAssignment(
       id,
       groupId,
@@ -179,12 +179,12 @@ export class GroupWorkoutManager {
 
   // Schedule helpers
   createRecurringSchedule(startDate, daysOfWeek, time) {
-    const id = `sch_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const id = `sch_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     return new Schedule(id, 'recurring', startDate, null, daysOfWeek, time);
   }
 
   createSeasonalSchedule(startDate, endDate, daysOfWeek, time) {
-    const id = `sch_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const id = `sch_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     return new Schedule(id, 'seasonal', startDate, endDate, daysOfWeek, time);
   }
 }

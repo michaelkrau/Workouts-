@@ -382,7 +382,8 @@ export class AIAssistant {
   calculate1RM(weight, reps) {
     if (reps === 1) return weight;
     
-    // Epley Formula
+    // Epley Formula: 1RM = weight × (1 + reps/30)
+    // One of the most widely used formulas for estimating one-rep max
     const estimated1RM = weight * (1 + reps / 30);
     
     return {

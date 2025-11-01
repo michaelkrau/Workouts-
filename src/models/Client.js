@@ -25,7 +25,7 @@ export class Client {
 
 export class FitnessAssessment {
   constructor(clientId, assessmentDate, measurements = {}) {
-    this.id = `assess_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    this.id = `assess_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     this.clientId = clientId;
     this.assessmentDate = assessmentDate;
     this.measurements = measurements; // weight, height, bodyFat, etc.
@@ -37,7 +37,7 @@ export class FitnessAssessment {
 
 export class ClientProgress {
   constructor(clientId, workoutId, completedDate, exercises = []) {
-    this.id = `prog_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    this.id = `prog_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     this.clientId = clientId;
     this.workoutId = workoutId;
     this.completedDate = completedDate;
@@ -56,7 +56,7 @@ export class ClientManager {
 
   // Client CRUD operations
   createClient(firstName, lastName, email, phone = '', dateOfBirth = null) {
-    const id = `client_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const id = `client_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
     const client = new Client(id, firstName, lastName, email, phone, dateOfBirth);
     this.clients.set(id, client);
     return client;
