@@ -1,0 +1,24 @@
+{
+  "name": "fitness-platform",
+  "version": "1.0.0",
+  "description": "Fitness platform for group class scheduling, client management, and custom workout creation",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test src/**/*.test.js"
+  },
+  "keywords": [
+    "fitness",
+    "workout",
+    "trainer",
+    "scheduling",
+    "ai-assistant"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
