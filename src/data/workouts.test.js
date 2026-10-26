@@ -88,11 +88,29 @@ test('tabata blocks only reference exercises of the same workout', () => {
   }
 });
 
+// Timed formats are exact, so the stated length may only round up by a minute.
+// Rep-based formats are estimates (rep speed, transitions), so they get more slack.
+const TIMED_FORMATS = new Set(['interval', 'circuit', 'tabata']);
+const TIMED_ROUNDING_MIN = 1;
+const REP_BASED_ALLOWANCE_MIN = 10;
+
 test('stated duration matches the workout structure', () => {
   for (const w of workouts) {
     const minutes = mainBlockSeconds(w) / 60;
-    assert.ok(w.durationMin >= Math.floor(minutes), `${w.id}: ${w.durationMin} min < ${minutes.toFixed(1)} min of work`);
-    assert.ok(w.durationMin <= minutes + 10, `${w.id}: ${w.durationMin} min is far above ${minutes.toFixed(1)} min of work`);
+    const timed = TIMED_FORMATS.has(w.format.type);
+    const min = timed ? Math.ceil(minutes) : Math.floor(minutes);
+    const max = Math.ceil(minutes) + (timed ? TIMED_ROUNDING_MIN : REP_BASED_ALLOWANCE_MIN);
+    assert.ok(w.durationMin >= min, `${w.id}: ${w.durationMin} min < ${minutes.toFixed(1)} min of work`);
+    assert.ok(w.durationMin <= max, `${w.id}: ${w.durationMin} min is above ${minutes.toFixed(1)} min of work`);
+  }
+});
+
+test('side-specific timed exercises switch sides within each interval', () => {
+  // Switching sides "between rounds" only balances out with an even round count.
+  for (const w of workouts.filter((x) => TIMED_FORMATS.has(x.format.type))) {
+    for (const ex of w.exercises) {
+      assert.doesNotMatch(ex.description, /בין סבבים|בסבבים מתחלפים/, `${w.id}/${ex.name}`);
+    }
   }
 });
 

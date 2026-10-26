@@ -50,7 +50,7 @@
       "summary": "אימון המתמקד בחיזוק שרירי הליבה והבטן",
       "equipment": "bodyweight",
       "level": "beginner",
-      "durationMin": 25,
+      "durationMin": 15,
       "format": { "type": "interval", "workSec": 45, "restSec": 15, "rounds": 2, "restBetweenRoundsSec": 60 },
       "focus": "ליבה עמוקה, יציבות אגן, שליטה ונשימה",
       "exercises": [
@@ -110,7 +110,7 @@
       "summary": "אימון אינטרוולים המתבצע בעצימות גבוהה",
       "equipment": "bodyweight",
       "level": "intermediate",
-      "durationMin": 24,
+      "durationMin": 20,
       "format": { "type": "interval", "workSec": 40, "restSec": 20, "rounds": 3, "restBetweenRoundsSec": 60 },
       "focus": "דופק גבוה, כוח מתפרץ וסיבולת",
       "exercises": [
@@ -175,14 +175,14 @@
       "summary": "האימון משפר את היכולת האירובית ומגביר את קצב שריפת השומנים בגוף",
       "equipment": "bodyweight",
       "level": "intermediate",
-      "durationMin": 35,
+      "durationMin": 27,
       "format": { "type": "interval", "workSec": 45, "restSec": 15, "rounds": 4, "restBetweenRoundsSec": 60 },
       "focus": "עבודה ממושכת בדופק בינוני-גבוה, רציפות על פני מהירות",
       "exercises": [
         { "name": "ג'אמפינג ג'קס", "description": "קפיצות פתיחה וסגירה בקצב קבוע. הנשימה נשארת סדירה — מאמץ שמאפשר לדבר במשפטים קצרים." },
         { "name": "סקוואט לפרס", "description": "ירידה לסקוואט ועלייה עם דחיפת ידיים מעל הראש. התנועה רציפה ומחברת בין רגליים לפלג גוף עליון." },
         { "name": "ריצה במקום", "description": "ריצה קלה על כריות כפות הרגליים, ידיים אקטיביות. קצב שניתן להחזיק לאורך כל האינטרוול." },
-        { "name": "מכרע לברך גבוהה", "description": "מכרע אחורי ומיד הרמת אותה ברך קדימה לגובה המותן. 45 שניות לכל צד בסבבים מתחלפים." },
+        { "name": "מכרע לברך גבוהה", "description": "מכרע אחורי ומיד הרמת אותה ברך קדימה לגובה המותן. החלפת רגל באמצע האינטרוול — כ-22 שניות לכל צד." },
         { "name": "מטפס הרים איטי", "description": "פלאנק יציב והבאת ברך אל החזה בקצב מבוקר. מעלה את הדופק תוך עבודת ליבה." },
         { "name": "צעד צד בסקוואט", "description": "תנועה לצד במצב סקוואט נמוך, 3 צעדים לכל כיוון. הישבן נשאר נמוך והחזה זקוף." }
       ]
@@ -213,7 +213,7 @@
       "summary": "תנועות מורכבות עם משקולות לשיפור תפקוד",
       "equipment": "dumbbells",
       "level": "intermediate",
-      "durationMin": 30,
+      "durationMin": 21,
       "format": { "type": "circuit", "workSec": 45, "restSec": 15, "rounds": 3, "restBetweenRoundsSec": 90 },
       "focus": "תנועות רב-מפרקיות: דחיפה, משיכה, הרמה וסיבוב",
       "exercises": [
@@ -232,7 +232,7 @@
       "summary": "שילוב תנועות מורכבות בדופק לב גבוה",
       "equipment": "dumbbells",
       "level": "advanced",
-      "durationMin": 28,
+      "durationMin": 20,
       "format": { "type": "interval", "workSec": 40, "restSec": 20, "rounds": 3, "restBetweenRoundsSec": 60 },
       "focus": "תנועות מורכבות בעצימות גבוהה — משקולות קלות-בינוניות",
       "exercises": [
@@ -251,13 +251,13 @@
       "summary": "אימון המתמקד בשרירי הישבן והבטן",
       "equipment": "band",
       "level": "intermediate",
-      "durationMin": 30,
+      "durationMin": 23,
       "format": { "type": "interval", "workSec": 45, "restSec": 15, "rounds": 3, "restBetweenRoundsSec": 60 },
       "focus": "ישבן גדול ובינוני, ליבה ויציבות אגן",
       "exercises": [
         { "name": "גשר ישבן עם גומייה", "description": "גומייה מעל הברכיים, הרמת אגן ופתיחת ברכיים החוצה בנקודה העליונה. ירידה איטית עם מתח קבוע בגומייה." },
         { "name": "הליכת סרטן", "description": "גומייה מעל הברכיים, מצב חצי סקוואט. צעדים קטנים לצד תוך שמירה על מתח בגומייה. 4 צעדים לכל כיוון." },
-        { "name": "בעיטה לאחור בעמידת שש", "description": "גומייה סביב כף הרגל ומתחת לכף היד. דחיפת העקב לאחור ולמעלה ללא קשת בגב. לסירוגין בין סבבים." },
+        { "name": "בעיטה לאחור בעמידת שש", "description": "גומייה סביב כף הרגל ומתחת לכף היד. דחיפת העקב לאחור ולמעלה ללא קשת בגב. החלפת רגל באמצע האינטרוול — כ-22 שניות לכל צד." },
         { "name": "צדפה", "description": "שכיבה על הצד, ברכיים כפופות וגומייה מעל הברכיים. פתיחת הברך העליונה כשהעקבים צמודים, האגן לא מתגלגל לאחור." },
         { "name": "סקוואט עם גומייה", "description": "גומייה מעל הברכיים, ירידה לסקוואט ודחיפת הברכיים החוצה כנגד ההתנגדות. עלייה בכיווץ ישבן." },
         { "name": "פלאנק צד עם הרמת רגל", "description": "פלאנק צד על האמה, גומייה מעל הקרסוליים. הרמת הרגל העליונה ללא שבירת קו הגוף." },
@@ -292,7 +292,7 @@
       "summary": "מעבר רציף בין תרגילים לכל הגוף, עם מנוחה בסוף כל סבב",
       "equipment": "bodyweight",
       "level": "intermediate",
-      "durationMin": 30,
+      "durationMin": 28,
       "format": { "type": "circuit", "workSec": 40, "restSec": 10, "rounds": 4, "restBetweenRoundsSec": 90 },
       "focus": "כל הגוף, סיבולת וכוח בסבב אחד רציף",
       "exercises": [
@@ -372,7 +372,7 @@
       "summary": "תנועות טבעיות ורב-מפרקיות לשיפור יציבות, קואורדינציה ותפקוד יומיומי",
       "equipment": "bodyweight",
       "level": "intermediate",
-      "durationMin": 30,
+      "durationMin": 20,
       "format": { "type": "circuit", "workSec": 45, "restSec": 15, "rounds": 3, "restBetweenRoundsSec": 60 },
       "focus": "דפוסי תנועה: כריעה, ציר, דחיפה, סיבוב והליכה",
       "exercises": [
@@ -433,12 +433,12 @@
       "summary": "תנועות רגליים וישבן רב-מפרקיות לשיפור כוח, יציבות ואיזון",
       "equipment": "dumbbells",
       "level": "intermediate",
-      "durationMin": 30,
+      "durationMin": 21,
       "format": { "type": "circuit", "workSec": 45, "restSec": 15, "rounds": 3, "restBetweenRoundsSec": 75 },
       "focus": "עבודה דו-צדדית וחד-צדדית, איזון ויציבות ברך",
       "exercises": [
         { "name": "סקוואט גביע", "description": "משקולת צמודה לחזה, ירידה עמוקה ועלייה דרך העקבים." },
-        { "name": "דדליפט רומני רגל אחת", "description": "משקולת ביד הנגדית לרגל העומדת, ציר קדימה עם גב ישר וחזרה בשליטה. לסירוגין בין סבבים." },
+        { "name": "דדליפט רומני רגל אחת", "description": "משקולת ביד הנגדית לרגל העומדת, ציר קדימה עם גב ישר וחזרה בשליטה. החלפת רגל באמצע האינטרוול — כ-22 שניות לכל צד." },
         { "name": "מכרע צידי", "description": "צעד רחב לצד, ישיבה אל הירך הכפופה והרגל השנייה ישרה. חזרה למרכז בדחיפה. לסירוגין." },
         { "name": "עלייה על מדרגה", "description": "משקולות לצד הגוף, עלייה על ספסל או מדרגה יציבה בדחיפה דרך העקב. ירידה איטית." },
         { "name": "מכרע אחורי עם הרמת ברך", "description": "מכרע אחורי ובעלייה הרמת הברך האחורית לגובה המותן. מאתגר איזון וכוח." },
@@ -453,7 +453,7 @@
       "summary": "חיזוק שרירי הבטן הישרים, האלכסוניים והליבה העמוקה",
       "equipment": "bodyweight",
       "level": "intermediate",
-      "durationMin": 20,
+      "durationMin": 15,
       "format": { "type": "interval", "workSec": 40, "restSec": 20, "rounds": 2, "restBetweenRoundsSec": 60 },
       "focus": "כפיפה, סיבוב, יציבות נגד תנועה",
       "exercises": [
