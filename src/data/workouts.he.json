@@ -313,7 +313,7 @@
       "summary": "זוגות תרגילים לשרירים מנוגדים ברצף, ללא מנוחה ביניהם",
       "equipment": "dumbbells",
       "level": "advanced",
-      "durationMin": 40,
+      "durationMin": 35,
       "format": { "type": "superset", "sets": 4, "reps": 10, "restBetweenExercisesSec": 0, "restSec": 90 },
       "focus": "דחיפה מול משיכה, פשיטה מול כפיפה — שריר אחד עובד, המנוגד מתאושש",
       "exercises": [
@@ -333,7 +333,7 @@
       "summary": "שני תרגילים ברצף לאותה קבוצת שריר להעמסה מקסימלית",
       "equipment": "dumbbells",
       "level": "advanced",
-      "durationMin": 40,
+      "durationMin": 35,
       "format": { "type": "superset", "sets": 4, "reps": 10, "restBetweenExercisesSec": 0, "restSec": 90 },
       "focus": "תרגיל מורכב ואחריו תרגיל מבודד לאותו שריר",
       "exercises": [
@@ -353,7 +353,7 @@
       "summary": "ביצוע עד כשל, הורדת משקל והמשך מיידי — ללא מנוחה",
       "equipment": "dumbbells",
       "level": "advanced",
-      "durationMin": 35,
+      "durationMin": 40,
       "format": { "type": "dropset", "sets": 3, "drops": 2, "dropPercent": 25, "restSec": 120 },
       "focus": "סט ראשי של 8–10 חזרות, ואחריו 2 הורדות משקל של כ-25% עד כשל טכני",
       "exercises": [
@@ -392,7 +392,7 @@
       "summary": "חזרות רבות בהתנגדות בינונית לשיפור יכולת השריר לעבוד לאורך זמן",
       "equipment": "band",
       "level": "intermediate",
-      "durationMin": 30,
+      "durationMin": 35,
       "format": { "type": "sets", "sets": 3, "reps": 20, "restSec": 30 },
       "focus": "15–25 חזרות, מנוחה קצרה, מתח קבוע בגומייה",
       "exercises": [
@@ -433,7 +433,7 @@
       "summary": "תנועות רגליים וישבן רב-מפרקיות לשיפור כוח, יציבות ואיזון",
       "equipment": "dumbbells",
       "level": "intermediate",
-      "durationMin": 35,
+      "durationMin": 30,
       "format": { "type": "circuit", "workSec": 45, "restSec": 15, "rounds": 3, "restBetweenRoundsSec": 75 },
       "focus": "עבודה דו-צדדית וחד-צדדית, איזון ויציבות ברך",
       "exercises": [
