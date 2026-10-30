@@ -1,5 +1,25 @@
 # Fitness Platform 🏋️
 
+## STRONG client app
+
+A mobile-first Hebrew (RTL) app that runs the trainer's pre-built workouts.
+
+```bash
+npm install
+npm start          # then open http://localhost:3000/app/
+npm test           # content checks + timer timeline tests
+```
+
+- **Library**: today's workout, workouts by goal or by method, and an equipment filter.
+- **Workout page**: structure, exercises with easier/harder options, and an optional warm-up and cool-down.
+- **Player**:
+  - a timed ring for interval, circuit and tabata workouts, with a "set done" button for rep-based ones
+  - sound and vibration in the last 3 seconds, and the screen stays on
+  - keyboard: space pauses; the arrow keys follow reading direction
+- **Finish**: effort rating (1–10) and a note. History is saved on the device.
+
+Code lives in `app/`. The content it reads is in `src/data/`, and the brand guide is in `design/BRAND.md`.
+
 A comprehensive fitness platform for group class scheduling, client management, and custom workout creation. Features a multi-modal AI assistant for generating workout plans, answering fitness questions, and providing quick tips.
 
 ## 🌟 Features

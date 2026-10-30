@@ -13,6 +13,10 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// STRONG client app (static) and the workout content it reads
+app.use('/app/data', express.static(new URL('./data', import.meta.url).pathname));
+app.use('/app', express.static(new URL('../app', import.meta.url).pathname));
+
 // Initialize Fitness Platform
 const platform = new FitnessPlatform();
 

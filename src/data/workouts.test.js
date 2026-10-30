@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { buildTimeline, totalSeconds } from '../../app/js/timeline.js';
 
 const load = (file) => JSON.parse(readFileSync(new URL(file, import.meta.url), 'utf8'));
 const library = load('./workouts.he.json');
@@ -10,29 +11,24 @@ const routines = load('./routines.he.json');
 const { workouts, labels, methods } = library;
 const SECONDS_PER_REP = 3;
 const SECONDS_PER_OPEN_SET = 60; // drop sets and other "to failure" sets
+const TIMED_FORMATS = new Set(['interval', 'circuit', 'tabata']);
 
 // Gendered imperatives and second-person forms the copy must avoid.
 // "את" is excluded on purpose: it is also the Hebrew direct-object marker.
 const GENDERED = ['אתה', 'לך', 'שלך', 'שמור', 'שמרי', 'תנשום', 'תנשמי', 'הקפד', 'הקפידי', 'התחל', 'התחילי', 'סיימת', 'תרגיש', 'תרגישי', 'תעשה', 'תעשי'];
 const gendered = new RegExp(`(^|[\\s.,:;!?—–-])(${GENDERED.join('|')})(?=$|[\\s.,:;!?—–-])`);
 
-/** Estimated length of the main block in seconds, derived from its structure. */
+/**
+ * Length of the main block in seconds. Timed formats use the player's own
+ * timeline, so the stated duration always matches what the timer runs.
+ * Rep-based formats are estimated from reps and rest.
+ */
 function mainBlockSeconds(workout) {
-  const { format, exercises } = workout;
-  switch (format.type) {
-    case 'interval':
-    case 'circuit':
-      return exercises.length * (format.workSec + format.restSec) * format.rounds
-        + (format.rounds - 1) * format.restBetweenRoundsSec;
-    case 'tabata':
-      return format.blocks * format.rounds * (format.workSec + format.restSec)
-        + (format.blocks - 1) * format.restBetweenRoundsSec;
-    default:
-      return exercises.reduce((sum, ex) => {
-        const setSeconds = typeof ex.reps === 'number' ? ex.reps * SECONDS_PER_REP : SECONDS_PER_OPEN_SET;
-        return sum + ex.sets * (setSeconds + ex.restSec);
-      }, 0);
-  }
+  if (TIMED_FORMATS.has(workout.format.type)) return totalSeconds(buildTimeline(workout));
+  return workout.exercises.reduce((sum, ex) => {
+    const setSeconds = typeof ex.reps === 'number' ? ex.reps * SECONDS_PER_REP : SECONDS_PER_OPEN_SET;
+    return sum + ex.sets * (setSeconds + ex.restSec);
+  }, 0);
 }
 
 function* strings(value) {
@@ -90,7 +86,6 @@ test('tabata blocks only reference exercises of the same workout', () => {
 
 // Timed formats are exact, so the stated length may only round up by a minute.
 // Rep-based formats are estimates (rep speed, transitions), so they get more slack.
-const TIMED_FORMATS = new Set(['interval', 'circuit', 'tabata']);
 const TIMED_ROUNDING_MIN = 1;
 const REP_BASED_ALLOWANCE_MIN = 10;
 

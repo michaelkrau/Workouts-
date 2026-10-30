@@ -110,7 +110,7 @@
       "summary": "אימון אינטרוולים המתבצע בעצימות גבוהה",
       "equipment": "bodyweight",
       "level": "intermediate",
-      "durationMin": 20,
+      "durationMin": 19,
       "format": { "type": "interval", "workSec": 40, "restSec": 20, "rounds": 3, "restBetweenRoundsSec": 60 },
       "focus": "דופק גבוה, כוח מתפרץ וסיבולת",
       "exercises": [
@@ -129,7 +129,7 @@
       "summary": "אימון אינטרוולים קצר בעצימות מקסימלית",
       "equipment": "bodyweight",
       "level": "advanced",
-      "durationMin": 20,
+      "durationMin": 19,
       "format": { "type": "tabata", "workSec": 20, "restSec": 10, "rounds": 8, "blocks": 4, "restBetweenRoundsSec": 60 },
       "focus": "מאמץ מקסימלי בפרצים קצרים — 4 בלוקים של 4 דקות",
       "blocks": [
@@ -156,7 +156,7 @@
       "summary": "אימון לשיפור היכולת האירובית וסיבולת לב-ריאה",
       "equipment": "bodyweight",
       "level": "beginner",
-      "durationMin": 30,
+      "durationMin": 28,
       "format": { "type": "interval", "workSec": 60, "restSec": 30, "rounds": 3, "restBetweenRoundsSec": 60 },
       "focus": "דופק בינוני-גבוה ויציב, נשימה סדירה",
       "exercises": [
@@ -175,7 +175,7 @@
       "summary": "האימון משפר את היכולת האירובית ומגביר את קצב שריפת השומנים בגוף",
       "equipment": "bodyweight",
       "level": "intermediate",
-      "durationMin": 27,
+      "durationMin": 26,
       "format": { "type": "interval", "workSec": 45, "restSec": 15, "rounds": 4, "restBetweenRoundsSec": 60 },
       "focus": "עבודה ממושכת בדופק בינוני-גבוה, רציפות על פני מהירות",
       "exercises": [
@@ -232,7 +232,7 @@
       "summary": "שילוב תנועות מורכבות בדופק לב גבוה",
       "equipment": "dumbbells",
       "level": "advanced",
-      "durationMin": 20,
+      "durationMin": 19,
       "format": { "type": "interval", "workSec": 40, "restSec": 20, "rounds": 3, "restBetweenRoundsSec": 60 },
       "focus": "תנועות מורכבות בעצימות גבוהה — משקולות קלות-בינוניות",
       "exercises": [
@@ -433,7 +433,7 @@
       "summary": "תנועות רגליים וישבן רב-מפרקיות לשיפור כוח, יציבות ואיזון",
       "equipment": "dumbbells",
       "level": "intermediate",
-      "durationMin": 21,
+      "durationMin": 20,
       "format": { "type": "circuit", "workSec": 45, "restSec": 15, "rounds": 3, "restBetweenRoundsSec": 75 },
       "focus": "עבודה דו-צדדית וחד-צדדית, איזון ויציבות ברך",
       "exercises": [
