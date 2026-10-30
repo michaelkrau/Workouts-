@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "description": "שגרות חימום ושחרור משותפות. כל אימון מפנה לשגרה אחת מכל סוג. כל השגרות במשקל גוף בלבד — מתאימות לכל אביזר.",
+    "note": "משך האימון (durationMin) מתייחס לחלק המרכזי בלבד; החימום והשחרור מתווספים אליו."
+  },
+  "warmups": [
+    {
+      "id": "warmup-mobility",
+      "title": "חימום ניידות ונשימה",
+      "durationMin": 5,
+      "items": [
+        { "name": "נשימה סרעפתית", "durationSec": 60, "description": "שכיבה על הגב, יד אחת על הבטן. שאיפה שמרחיבה את הבטן והצלעות, נשיפה ארוכה שאוספת את הבטן פנימה." },
+        { "name": "חתול-פרה", "durationSec": 60, "description": "עמידת שש. קמירת הגב בנשיפה ושקיעה עדינה בשאיפה, חוליה אחר חוליה." },
+        { "name": "סיבובי אגן בשכיבה", "durationSec": 45, "description": "שכיבה על הגב, ברכיים כפופות. הטיית אגן עדינה קדימה ואחורה, ואז מעגלים קטנים." },
+        { "name": "גשר קל", "durationSec": 45, "description": "הרמת אגן איטית לחצי גובה וירידה, להפעלת הישבן לפני העבודה." },
+        { "name": "פלאנק קצר", "durationSec": 30, "description": "פלאנק אמות של 30 שניות עם נשימה רגועה ובטן אסופה." },
+        { "name": "סיבובי חזה בשכיבה על הצד", "durationSec": 60, "description": "ברכיים כפופות, פתיחת היד העליונה לאחור בקשת רחבה. 30 שניות לכל צד." }
+      ]
+    },
+    {
+      "id": "warmup-dynamic",
+      "title": "חימום דינמי לכוח",
+      "durationMin": 6,
+      "items": [
+        { "name": "סיבובי מפרקים", "durationSec": 60, "description": "מעגלים בקרסוליים, בברכיים, באגן ובכתפיים — 10 לכל כיוון." },
+        { "name": "סקוואט משקל גוף", "durationSec": 45, "description": "10 סקוואטים איטיים בטווח מלא, חזה פתוח." },
+        { "name": "ציר ירך", "durationSec": 45, "description": "ידיים על המותניים, הטיית גו קדימה עם גב ישר. 10 חזרות לתרגול הדפוס." },
+        { "name": "מכרע אחורי עם הושטה", "durationSec": 60, "description": "מכרע אחורי והושטת ידיים מעל הראש. 5 לכל צד." },
+        { "name": "מעגלי ידיים ופתיחת חזה", "durationSec": 45, "description": "מעגלים גדולים קדימה ואחורה, ואז פתיחה וסגירה של הידיים בגובה הכתפיים." },
+        { "name": "שכיבות סמיכה קלות", "durationSec": 45, "description": "8 חזרות על הברכיים או על משטח מוגבה, להכנת הכתפיים." },
+        { "name": "סט הכנה", "durationSec": 60, "description": "סט אחד של התרגיל הראשון באימון במשקל קל או ללא משקל." }
+      ]
+    },
+    {
+      "id": "warmup-cardio-ramp",
+      "title": "חימום הדרגתי לאינטרוולים",
+      "durationMin": 5,
+      "items": [
+        { "name": "צעידה במקום", "durationSec": 60, "description": "צעידה אנרגטית עם תנועת ידיים רחבה, העלאת דופק הדרגתית." },
+        { "name": "ג'קים קלים", "durationSec": 45, "description": "ג'אמפינג ג'קס בקצב נוח, או צעד צד ללא קפיצה." },
+        { "name": "סקוואט לעלייה על בהונות", "durationSec": 45, "description": "סקוואט ובעלייה הרמת עקבים — הכנה לנחיתות." },
+        { "name": "מכרע מתחלף", "durationSec": 45, "description": "מכרע אחורי לסירוגין בקצב מבוקר." },
+        { "name": "ברכיים גבוהות", "durationSec": 30, "description": "30 שניות של ברכיים גבוהות בקצב עולה." },
+        { "name": "פלאנק לכלב מביט מטה", "durationSec": 45, "description": "מעבר רציף בין פלאנק להרמת אגן, להכנת הכתפיים והירכיים האחוריות." },
+        { "name": "פרץ קצר", "durationSec": 30, "description": "10 שניות קצב מהיר, 20 שניות רגוע — סימולציה של האינטרוול הראשון." }
+      ]
+    }
+  ],
+  "cooldowns": [
+    {
+      "id": "cooldown-stretch",
+      "title": "שחרור ומתיחות",
+      "durationMin": 4,
+      "items": [
+        { "name": "הורדת דופק", "durationSec": 45, "description": "צעידה איטית במקום עם נשיפות ארוכות, עד שהנשימה נרגעת." },
+        { "name": "מתיחת ירך אחורית", "durationSec": 45, "description": "רגל מושטת קדימה על העקב, הטיית גו עם גב ישר. 20 שניות לכל צד." },
+        { "name": "מתיחת ארבע ראשי", "durationSec": 45, "description": "עמידה או שכיבה על הצד, משיכת העקב אל הישבן. 20 שניות לכל צד." },
+        { "name": "מתיחת ישבן בשכיבה", "durationSec": 45, "description": "קרסול על הברך הנגדית ומשיכת הרגל אל החזה. 20 שניות לכל צד." },
+        { "name": "תנוחת ילד", "durationSec": 60, "description": "ישיבה על העקבים והושטת ידיים קדימה. נשימה עמוקה אל הגב." }
+      ]
+    },
+    {
+      "id": "cooldown-upper",
+      "title": "שחרור לפלג גוף עליון",
+      "durationMin": 4,
+      "items": [
+        { "name": "מתיחת חזה בפינה או בקיר", "durationSec": 45, "description": "אמה צמודה לקיר וסיבוב הגוף בעדינות הלאה ממנו. 20 שניות לכל צד." },
+        { "name": "מתיחת כתף אחורית", "durationSec": 45, "description": "יד ישרה נמשכת לרוחב החזה ביד השנייה. 20 שניות לכל צד." },
+        { "name": "מתיחת טרייספס", "durationSec": 45, "description": "יד מאחורי הראש, מרפק מצביע למעלה, משיכה עדינה. 20 שניות לכל צד." },
+        { "name": "חתול-פרה", "durationSec": 45, "description": "תנועה איטית לשחרור עמוד השדרה." },
+        { "name": "תנוחת ילד עם הושטה לצדדים", "durationSec": 60, "description": "ידיים מושטות קדימה, הזזתן לימין ולשמאל למתיחת הגב הרחב." }
+      ]
+    }
+  ],
+  "assignments": {
+    "1": { "warmup": "warmup-mobility", "cooldown": "cooldown-stretch" },
+    "2": { "warmup": "warmup-dynamic", "cooldown": "cooldown-upper" },
+    "3": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "4": { "warmup": "warmup-cardio-ramp", "cooldown": "cooldown-stretch" },
+    "5": { "warmup": "warmup-cardio-ramp", "cooldown": "cooldown-stretch" },
+    "6": { "warmup": "warmup-cardio-ramp", "cooldown": "cooldown-stretch" },
+    "7": { "warmup": "warmup-cardio-ramp", "cooldown": "cooldown-stretch" },
+    "8": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "9": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "10": { "warmup": "warmup-cardio-ramp", "cooldown": "cooldown-stretch" },
+    "11": { "warmup": "warmup-mobility", "cooldown": "cooldown-stretch" },
+    "28": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "29": { "warmup": "warmup-cardio-ramp", "cooldown": "cooldown-stretch" },
+    "30": { "warmup": "warmup-dynamic", "cooldown": "cooldown-upper" },
+    "31": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "32": { "warmup": "warmup-dynamic", "cooldown": "cooldown-upper" },
+    "33": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "34": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "35": { "warmup": "warmup-dynamic", "cooldown": "cooldown-upper" },
+    "36": { "warmup": "warmup-dynamic", "cooldown": "cooldown-stretch" },
+    "37": { "warmup": "warmup-mobility", "cooldown": "cooldown-stretch" }
+  }
+}
